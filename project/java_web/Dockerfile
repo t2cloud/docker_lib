@@ -1,8 +1,8 @@
 FROM tomcat
 
-RUN mkdir -p /usr/local/tomcat/webapps/hello
+RUN mkdir -p /usr/local/tomcat/webapps/gogo
 
-COPY /hello /usr/local/tomcat/webapps/hello
+COPY /gogo /usr/local/tomcat/webapps/gogo
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
