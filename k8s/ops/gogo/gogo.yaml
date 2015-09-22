@@ -16,4 +16,4 @@ spec:
         image: 10.0.0.140:5000/app/gogo:22
         ports:
         - containerPort: 8080
-          hostPort: 10080
+          hostPort: 8888
