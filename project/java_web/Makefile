@@ -20,14 +20,9 @@ C_PORT:= 8080
 NAME=$(WEB_NAME).$(VERSION) 
 help:
 		@echo "Supply the forwing target"
-		@echo " dev        - build app image test"
 		@echo " build      - build app image "
 		@echo " start      - start demo app "
-dev:
-		@echo "build images for dev"
-		$(CP) $(WEB_ROOT) ./ 
-		$(BUILD) -t $(NAME) .
-		$(IMAGE)
+
 start:
 		@echo "build images test"
 		$(RUN) -d -p $(H_PORT):$(C_PORT) $(NAME)
