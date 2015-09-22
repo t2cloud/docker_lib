@@ -38,8 +38,6 @@ rm:
 		$(PS) -a -q | xargs $(RM) 
 rmi:
 		$(RMI) $(NAME)
-
-
 build:
 		@echo "build images"
 		$(BUILD) -t $(NAME) .
