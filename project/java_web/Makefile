@@ -8,6 +8,7 @@ help:
 		@echo " start      - start demo app "
 build:
 		@echo "build images test"
+		cp -r /root/gogo ./  
 		docker build -t gogo .
 start:
 		@echo "build images test"
